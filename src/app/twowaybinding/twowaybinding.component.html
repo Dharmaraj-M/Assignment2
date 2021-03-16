@@ -1,0 +1,11 @@
+<mat-card class="myCard">
+    <mat-card-content>
+        <mat-form-field class="formField">
+            <mat-label>Name</mat-label>
+            <input matInput [(ngModel)]="twowayBindingVariable" placeholder="Name">
+        </mat-form-field>
+        <h3>{{ twowayBindingVariable }}</h3>
+        <button mat-raised-button color="primary" (click)="checkName()">Check Name</button>
+        <h3>{{ myName }}</h3>
+    </mat-card-content>
+</mat-card>
